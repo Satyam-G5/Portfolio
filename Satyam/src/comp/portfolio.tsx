@@ -13,10 +13,10 @@ const portfolio: React.FC = () => {
 
   return (
     <div>
-    <div id='Home' className='h-screen  w-full flex-col justify-center items-center bg-primary'>
+    <div id='Home' className='h-screen w-full flex-col justify-center items-center bg-primary'>
       <div className='flex justify-center items-center h-screen w-full md:w-screen ' style={{ backgroundImage: `url(${pattern})` }}>
 
-        <div className='flex flex-col w-full md:flex-col lg:flex-row justify-center items-center md:mt-[8%] lg:mt-[8%]'>
+        <div className='flex flex-col h-max w-full md:flex-col lg:flex-row justify-center items-center md:mt-[8%] lg:mt-[8%]'>
 
           <div className='flex-col justify-center flex md:w-1/2 items-center text-left mt-40 md:mt-0 lg:mt-0'>
             <h1 className='text-2xl md:text-4xl font-bold text-white flex text-left '>Hi , I'm </h1>
@@ -27,7 +27,7 @@ const portfolio: React.FC = () => {
             </p>
             <div className='mt-16 text-white font-serif w-[70%] flex flex-row justify-evenly items-center'>
               <motion.button whileTap={{ scale: 0.85 }} onClick={() => { window.location.href = '#contact'; }} className='w-32 h-12 bg-blue-700 rounded-lg mt-2 p-2 '>Hire Me</motion.button>
-              <button className='w-80 h-12  mr-6 mt-2 p-2 text-md md:text-xl text-blue-500'>VIEW MY PORTFOLIO</button>
+              <motion.button whileTap={{ scale: 0.85 }} onClick={() => { window.location.href = '#projects'; }}  className='w-80 h-12  mr-6 mt-2 p-2 text-md md:text-xl text-blue-500'>VIEW MY PORTFOLIO</motion.button>
             </div>
           </div>
 
@@ -109,16 +109,15 @@ const portfolio: React.FC = () => {
             <div className='flex flex-col md:ml-20'><h1 className='text-lg font-bold font-sans'>ROLE</h1><p className='font-serif font-thin text-md text-gray-600'>Developer</p></div>
             <div className='flex flex-col'><h1 className='text-lg font-bold font-sans'>EMAIL</h1><p className='font-serif font-thin text-md text-gray-600'>satyamofficial4916@gmail.com</p></div>
             <div className='flex flex-col md:ml-20'><h1 className='text-lg font-bold font-sans'>EMPLOYMENT</h1><p className='font-serif font-thin text-md text-gray-600'>Open</p></div>
-
           </div>
         </motion.div>
       </section>
 
-      <div className='w-full flex flex-col md:flex-col justify-evenly items-center mt-24'>
+      <div id='skills' className='w-full flex flex-col md:flex-col justify-evenly items-center mt-24'>
         <h1 className='text-3xl text-blue-500 font-semibold font-Madimi mb-8 mt-6'>Let's see what I got :-)</h1>
         <SkillsCarousel />
       </div>
-      <div className='mt-24 flex flex-col justify-center items-center'>
+      <div id ='projects' className='mt-24 flex flex-col justify-center items-center'>
         <h1 className='text-3xl text-blue-500 font-semibold font-Madimi mb-8 mt-6'>Projects</h1>
       <ProjectTile/>
 

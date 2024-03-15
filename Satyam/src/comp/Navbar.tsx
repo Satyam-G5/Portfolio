@@ -60,11 +60,11 @@ const Navbar: React.FC = () => {
         <a href="#Home" className="text-lg text-white p-3 hover:cursor-pointer">
           Home
         </a>
-        <a href="#about" className="text-lg text-white p-3 hover:cursor-pointer">
+        <a href="#projects" className="text-lg text-white p-3 hover:cursor-pointer">
           Projects
         </a>
-        <a href="#about" className="text-lg text-white p-3 hover:cursor-pointer">
-          Freelancing
+        <a href="#skills" className="text-lg text-white p-3 hover:cursor-pointer">
+          Skills
         </a>
         <a href="#contact" className="text-lg text-white p-3 hover:cursor-pointer ">
           Contact Me
