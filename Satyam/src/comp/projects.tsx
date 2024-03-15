@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
-import evently from '../assets/Screenshot 2024-03-13 203427.png';
-import wave from '../assets/Wave.png'
-import traveller from '../assets/traveller.png'
+import wave from '../assets/Wave.png';
+import traveller from '../assets/traveller.png';
 import playpals from '../assets/Playpals.png';
 
 
@@ -42,22 +41,44 @@ const ProjectList = () => {
                     className="project-tile md:w-[80%] md:h-[80%] flex flex-col md:flex-row items-center justify-center gap-4 transition-all duration-300"
                     whileHover={{ scale: 1.05 }} // Add a hover effect using framer-motion
                 >
-                    <div className='md:w-[40%] w-[80%] md:h-[90%]'>
-                        {/* <img
-                            src={evently}
-                            alt="Project"
-                            className="md:w-full h-full rounded-md"
-                        /> */}
+                    <motion.div
+                    initial={{
+                        opacity: 0,
+                        x: -100 
+                      }}
+                      whileInView={{
+                        opacity: 1,
+                        x: 0,
+                        transition: {
+                          duration: 1 
+                        }
+                      }}
+                      viewport={{ once: true }} 
+                    className='md:w-[40%] w-[80%] md:h-[90%]'>
+                       
                         <iframe className='w-[300px] h-[169px] md:w-[400px] md:h-[225px]' src="https://www.loom.com/embed/9387c76f10934972b14c6c19437ce60f?sid=2be7f7ee-7f39-4e35-8c10-768d4493386d" frameBorder="0" allowFullScreen></iframe>
-                    </div>
-                    <div className="md:w-[60%]  w-[80%] flex flex-col justify-center items-center p-4 text-center md:text-left">
+                    </motion.div>
+                    <motion.div
+                     initial={{
+                        opacity: 0,
+                        x: 100
+                      }}
+                      whileInView={{
+                        opacity: 1,
+                        x: 0, 
+                        transition: {
+                          duration: 1
+                        }
+                      }}
+                      viewport={{ once: true }} 
+                       className="md:w-[60%]  w-[80%] flex flex-col justify-center items-center p-4 text-center md:text-left">
 
                         <p className="text-sm md:text-md mt-4 text-slate-700  ">Tired of scheduling headaches? Enter Evently – the superhero of appointment coordination! Built on the trusted Calendly platform, Evently takes scheduling to soaring new heights by weaving in seamless video conferencing.
                             With Evently, organizing meetings feels like a walk in the park. Wave goodbye to endless email chains and phone tag – just share your personalized Evently link, and let your guests pick a time that suits them best!
                             Ready to simplify your schedule? Say hello to stress-free planning with Evently – where every meeting is a breeze!
                         </p>
                         <div className='flex flex-col text-md items-start md:text-lg '>
-                            <h1 className='text-md md:text-xl '>Implied Stack</h1>
+                            <h1 className='text-md md:text-xl text-gray-700 font-Playfair mt-2'>Implied Stack</h1>
                             <div className='mt-4 flex flex-row justify-start items-center'>
                                 <p className='text-black text-start text-md font-semibold'>Fontend : </p>
                                 <svg className='ml-2 rounded-full h-6 w-6 shadow-2xl shadow-black bg-white ' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
@@ -117,7 +138,7 @@ const ProjectList = () => {
                                 </svg>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </motion.div>
                 <span className='md:bg-violet-400 bg-violet-700 h-1 w-[90%] mt-8 mb-10'></span>
 
@@ -171,7 +192,7 @@ const ProjectList = () => {
 
                         </p>
                         <div className='flex flex-col text-md items-start md:text-lg '>
-                            <h1 className='text-md md:text-xl '>Implied Stack</h1>
+                            <h1 className='text-md md:text-xl text-gray-700 font-Playfair mt-2'>Implied Stack</h1>
                             <div className='mt-4 flex flex-row justify-start items-center'>
                                 <p className='text-black text-start text-md font-semibold'>Fontend : </p>
                                 <svg className='ml-2 rounded-full h-6 w-6 shadow-2xl shadow-black bg-white ' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
@@ -277,7 +298,7 @@ const ProjectList = () => {
 
                         </p>
                         <div className='flex flex-col text-md items-start md:text-lg '>
-                            <h1 className='text-md md:text-xl '>Implied Stack</h1>
+                            <h1 className='text-md md:text-xl text-gray-700 font-Playfair mt-2'>Implied Stack</h1>
                             <div className='mt-4 flex flex-row justify-start items-center'>
                                 <p className='text-black text-start text-md font-semibold'>Fontend : </p>
                                 <svg className='ml-2 rounded-full h-6 w-6 shadow-2xl shadow-black bg-white ' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
@@ -364,7 +385,7 @@ const ProjectList = () => {
                     </div>
                     <div className="md:w-[60%]  w-[80%] flex flex-col justify-center items-center p-4 text-center md:text-left">
 
-                        <p className="text-sm md:text-md mt-4 text-slate-700  ">"Meet Traveller, my debut project in the realm of state tourism!
+                        <p className="text-sm md:text-md text-gray-700 font-Playfair mt-2  ">"Meet Traveller, my debut project in the realm of state tourism!
                          It's your ultimate online destination for seamless travel planning, from booking guides to securing hotels.
                           With interactive features and secure payments via Razorpay, Traveller is your trusted companion for unforgettable adventures across different states. 
                           Let's start exploring together!"
