@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import webrtc from '../assets/webrtc-svgrepo-com.svg'
 
 interface Skill {
   name: string;

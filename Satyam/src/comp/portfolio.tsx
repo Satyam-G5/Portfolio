@@ -6,7 +6,6 @@ import pattern from '../assets/hero_pattern.jpg'
 import round from '../assets/rounded_border.png'
 import aboutme from '../assets/man-analysis-business-accounting-laptop-45719380.webp'
 import SkillsCarousel from './SkillBar'
-import CalendlyWidget from './CalendlyEmbed';
 import Footer from './Footer';
 import ProjectTile from './projects'
 
