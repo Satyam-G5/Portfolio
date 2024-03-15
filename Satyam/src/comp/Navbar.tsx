@@ -10,13 +10,13 @@ const Navbar: React.FC = () => {
 
 
   return (
-    <nav className="w-full h-28 fixed top-0 mb-10 bg-dark flex shadow-lg justify-between z-10 ">
+    <nav className="w-screen h-24 fixed top-0 mb-10 bg-dark flex shadow-lg justify-between z-10 ">
       <div className=" font-bold flex flex-row  h-20 rounded-r-full w-1/2" >
         <span className=" text-white bg-clip-text text-2xl mt-8 ml-3 flex flex-col">
           <Link className='text-xl font-Playfair ml-3' to='/'>
             ssdev
           </Link>
-          <p className='text-sm mt-2 font-Playfair ml-2'>satyamofficial4916@gmail.com</p>
+          {/* <p className='text-sm mt-2 font-Playfair ml-2'>satyamofficial4916@gmail.com</p> */}
         </span>
       </div>
 
@@ -57,18 +57,18 @@ const Navbar: React.FC = () => {
       {/* Desktop Menu */}
       <div className="hidden font-Playfair md:rounded-full md:h-16 md:flex md:flex-row md:justify-evenly items-center w-1/2 md:mt-4  ">
 
-        <Link to="/" className="text-lg text-white p-3 hover:cursor-pointer">
+        <a href="#Home" className="text-lg text-white p-3 hover:cursor-pointer">
           Home
-        </Link>
-        <Link to="/" className="text-lg text-white p-3 hover:cursor-pointer">
+        </a>
+        <a href="#about" className="text-lg text-white p-3 hover:cursor-pointer">
           Projects
-        </Link>
-        <Link to="/" className="text-lg text-white p-3 hover:cursor-pointer">
+        </a>
+        <a href="#about" className="text-lg text-white p-3 hover:cursor-pointer">
           Freelancing
-        </Link>
-        <Link to="/" className="text-lg text-white p-3 hover:cursor-pointer ">
+        </a>
+        <a href="#contact" className="text-lg text-white p-3 hover:cursor-pointer ">
           Contact Me
-        </Link>
+        </a>
 
       </div>
 
@@ -93,3 +93,4 @@ const Navbar: React.FC = () => {
 }
 
 export default Navbar;
+

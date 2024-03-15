@@ -9,7 +9,8 @@ export default {
       fontFamily: {
         Playfair: ['Playfair Display', 'sans'],
         Madimi : ["Madimi One", 'sans-serif'],
-        Pacifico : ["Pacifico", 'cursive']
+        Pacifico : ["Pacifico", 'cursive'],
+        Rubric : ['Rubik Gemstones' , 'sans-serif']
       },
       backgroundColor: {
         'custom': 'rgb(40, 41, 42)',
