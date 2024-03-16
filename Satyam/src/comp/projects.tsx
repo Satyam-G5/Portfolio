@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import wave from '../assets/Wave.png';
 import traveller from '../assets/traveller.png';
-import playpals from '../assets/Playpals.png';
 
 
 const ProjectList = () => {
@@ -285,11 +284,13 @@ const ProjectList = () => {
                     whileHover={{ scale: 1.05 }} // Add a hover effect using framer-motion
                 >
                     <div className='md:w-[40%] w-[80%] md:h-[90%]'>
-                        <img
+                        {/* <img
                             src={playpals}
                             alt="Project"
                             className="md:w-full h-full rounded-md"
-                        />
+                        /> */}
+
+<iframe className='w-[300px] h-[169px] md:w-[400px] md:h-[225px]' src="https://www.loom.com/embed/bd72ca90ccc54ba8841bc7324546a75c?sid=5dc16be1-d911-4d69-9d9e-b5e141c56729" frameBorder="0" allowFullScreen></iframe>
                     </div>
                     <div className="md:w-[60%]  w-[80%] flex flex-col justify-center items-center p-4 text-center md:text-left">
 
